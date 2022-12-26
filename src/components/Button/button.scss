@@ -2,20 +2,57 @@
 
 .button {
   cursor: pointer;
+  color: $primary-color;
   font-family: $primary-font-family;
-  box-shadow: 4px 4px 0px $secondary-color;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:disabled {
+    cursor: default;
+    pointer-events: none;
+    color: $disabled-gray;
+  }
 }
 
-.primary {
-  color: $secondary-color;
+.solid {
   background-color: $highlight-color;
-  border: 2px solid $secondary-color;
+  &:hover {
+    opacity: 0.8;
+    transition: all ease-in 100ms;
+  }
+  &:active {
+    background-color: black;
+    transition: all ease-in 100ms;
+  }
+  &:disabled {
+    background-color: $disabled-lightgray;
+  }
 }
 
-.secondary {
+.outline {
   color: $secondary-color;
-  background-color: $primary-color;
-  border: 2px solid $secondary-color;
+  border: 1px solid $secondary-color;
+  background-color: transparent;
+  &:hover {
+    background-color: bisque;
+    transition: all ease-in 100ms;
+  }
+  &:active {
+    background-color: $highlight-color;
+    transition: all ease-in 100ms;
+  }
+  &:disabled {
+    border-color: $disabled-lightgray;
+  }
+}
+
+.text {
+  color: $secondary-color;
+  background-color: transparent;
+  border: none;
 }
 
 .small {
@@ -36,10 +73,7 @@
   height: 52px;
 }
 
-.icon {
-  width: 160px;
-  height: 52px;
-
+.with-icon {
   svg {
     width: 12px;
   }
