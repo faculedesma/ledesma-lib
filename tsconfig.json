@@ -1,21 +1,21 @@
 {
   "compilerOptions": {
-    "skipLibCheck": true,
+    "target": "es5",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": false,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "jsx": "react",
     "module": "ESNext",
-    "moduleResolution": "node",
-    "jsx": "react-jsx",
     "declaration": true,
     "declarationDir": "types",
+    "sourceMap": true,
     "outDir": "dist",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,
-    "baseUrl": ".",
-    "paths": {
-      "@components/*": ["src/components/*"]
-    }
+    "baseUrl": "./src"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
