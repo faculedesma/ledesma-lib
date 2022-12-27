@@ -13,10 +13,10 @@ export interface IButtonProps {
   startIcon?: SVGElement;
   endIcon?: SVGElement;
   disabled?: boolean;
-  onClick?: () => void;
+  onClick?: React.MouseEventHandler;
 }
 
-export const Button = ({
+const Button = ({
   children,
   type = 'solid',
   size = 'medium',
@@ -43,3 +43,5 @@ export const Button = ({
     </button>
   );
 };
+
+export default Button;

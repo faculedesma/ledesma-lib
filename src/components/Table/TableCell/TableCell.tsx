@@ -8,9 +8,11 @@ export interface ITableCellProps {
   textAlign?: TextAlignType;
 }
 
-export const TableCell = ({
+const TableCell = ({
   children,
   textAlign = 'left'
 }: ITableCellProps): JSX.Element => {
   return <td className={`cell cell-${textAlign}`}>{children}</td>;
 };
+
+export default TableCell;

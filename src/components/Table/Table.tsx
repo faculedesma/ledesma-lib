@@ -1,4 +1,5 @@
 import React from 'react';
+import './table.scss';
 
 type RowStyleType = 'lines' | 'zebra' | 'blank';
 type RowSizeType = 'large' | 'normal' | 'small' | string;
@@ -11,7 +12,7 @@ export interface ITableProps {
   columnSpace?: ColumnSpaceType;
 }
 
-export const Table = ({
+const Table = ({
   children,
   rowStyle = 'lines',
   rowSize = 'normal',
@@ -25,3 +26,5 @@ export const Table = ({
     </table>
   );
 };
+
+export default Table;

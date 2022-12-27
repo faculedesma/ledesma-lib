@@ -1,2 +1,2 @@
-export { DataTable } from './DataTable';
-export { Table } from './Table';
+// export { default } from './DataTable';
+export { default } from './Table';

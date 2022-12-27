@@ -1,1 +1,1 @@
-export { TableHeaderCell } from './TableHeaderCell';
+export { default } from './TableHeaderCell';

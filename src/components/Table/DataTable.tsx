@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { TableRow } from './TableRow';
-import { TableHeaderCell } from './TableHeaderCell';
-import { TableCell } from './TableCell';
+import TableRow from './TableRow';
+import TableHeaderCell from './TableHeaderCell';
+import TableCell from './TableCell';
 import './table.scss';
 
 type RowStyleType = 'lines' | 'zebra' | 'blank';
@@ -16,7 +16,7 @@ export interface ITableProps {
   columnSpace?: ColumnSpaceType;
 }
 
-export const DataTable = ({
+const DataTable = ({
   rows,
   columns,
   rowStyle = 'lines',
@@ -63,3 +63,5 @@ export const DataTable = ({
     </table>
   );
 };
+
+export default DataTable;

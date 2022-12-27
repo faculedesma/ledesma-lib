@@ -5,16 +5,23 @@ export interface ITableRowProps {
   children: JSX.Element;
   active?: boolean;
   hover?: boolean;
+  onClick?: React.MouseEventHandler;
 }
 
-export const TableRow = ({
+const TableRow = ({
   children,
   active = false,
-  hover = false
+  hover = false,
+  onClick = undefined
 }: ITableRowProps): JSX.Element => {
   return (
-    <tr className={`${active ? 'active' : ''} ${hover ? 'hovered' : ''}`}>
+    <tr
+      className={`${active ? 'active' : ''} ${hover ? 'hovered' : ''}`}
+      onClick={onClick}
+    >
       {children}
     </tr>
   );
 };
+
+export default TableRow;
