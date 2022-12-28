@@ -29,7 +29,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@faculedesma'
       - name: Install dependencies
-        run: npm install
+        run: npm ci
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       - name: Lint
@@ -48,7 +48,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@faculedesma'
       - name: Install dependencies
-        run: npm install
+        run: npm ci
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       - name: Build
@@ -73,7 +73,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@faculedesma'
       - name: Install dependencies
-        run: npm install
+        run: npm ci
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       - uses: actions/download-artifact@v2
@@ -99,8 +99,11 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@faculedesma'
       - name: Install dependencies
-        run: npm install
+        run: npm ci
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       - name: Semantic release
         run: npm run semantic-release
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
