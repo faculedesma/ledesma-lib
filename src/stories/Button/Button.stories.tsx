@@ -1,7 +1,6 @@
 import React from 'react';
-import { Button } from '../../components/Button/Button';
+import Button from '../../components/Button/Button';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import ArrowRightSVG from '../../../assets/icons/arrow-right.svg';
 
 export default {
   title: 'Buttons/Button',
@@ -46,7 +45,7 @@ WithIconButton.args = {
   type: 'solid',
   size: 'medium',
   disabled: false,
-  startIcon: ArrowRightSVG
+  startIcon: undefined
 };
 
 export const SmallButton = Template.bind({});
