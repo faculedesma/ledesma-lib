@@ -14,8 +14,8 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,
-    "baseUrl": "."
+    "baseUrl": "./src"
   },
-  "include": ["src", "**/*.ts", "**/*.tsx"],
+  "include": ["src", "test"],
   "exclude": ["node_modules", "dist"]
 }
