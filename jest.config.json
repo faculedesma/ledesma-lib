@@ -1,6 +1,7 @@
 {
   "preset": "ts-jest",
   "testEnvironment": "jsdom",
+  "testPathIgnorePatterns": ["<rootDir>/dist"],
   "moduleNameMapper": {
     "\\.(scss)$": "identity-obj-proxy"
   }
