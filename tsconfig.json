@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES5",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": false,
     "strict": true,
@@ -14,8 +14,9 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,
+    "rootDir": "src",
     "baseUrl": "./src"
   },
-  "include": ["src", "test"],
+  "include": ["**/*.ts", "**/*.tsx", "test"],
   "exclude": ["node_modules", "dist"]
 }
