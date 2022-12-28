@@ -1,8 +1,2 @@
-# dependencies
 /node_modules
-
-# testing
-/test
-
-# production
 /dist

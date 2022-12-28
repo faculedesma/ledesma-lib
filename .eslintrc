@@ -15,7 +15,7 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "prettier", "jsx-a11y", "@typescript-eslint"],
+  "plugins": ["react", "jest", "prettier", "jsx-a11y", "@typescript-eslint"],
   "rules": {
     "prettier/prettier": "error",
     "@typescript-eslint/consistent-type-assertions": "off"
