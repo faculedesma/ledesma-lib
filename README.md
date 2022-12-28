@@ -1,3 +1,5 @@
+[![Deployment Pipeline](https://github.com/faculedesma/ledesma-lib/actions/workflows/pipeline.yml/badge.svg)](https://github.com/faculedesma/ledesma-lib/actions/workflows/pipeline.yml)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
