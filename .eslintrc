@@ -19,5 +19,10 @@
   "rules": {
     "prettier/prettier": "error",
     "@typescript-eslint/consistent-type-assertions": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
