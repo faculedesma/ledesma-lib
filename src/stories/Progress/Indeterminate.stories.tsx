@@ -14,12 +14,10 @@ const Template: ComponentStory<typeof Indeterminate> = (args) => (
 
 export const Basic = Template.bind({});
 Basic.args = {
-  label: '',
-  size: 'medium'
+  label: ''
 };
 
 export const WithLabel = Template.bind({});
 WithLabel.args = {
-  label: 'Loading',
-  size: 'medium'
+  label: 'Loading'
 };
