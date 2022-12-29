@@ -1,4 +1,7 @@
 import React from 'react';
+import Button from '../Button/Button';
+import ArrowRightIcon from '../../../assets/icons/arrow-right.svg';
+import ArrowLeftIcon from '../../../assets/icons/arrow-left.svg';
 import './pagination.scss';
 
 export interface IPaginationProps {
@@ -10,20 +13,27 @@ export interface IPaginationProps {
 }
 
 const Pagination = ({
-  currentPage,
-  pageSize,
-  totalItems,
+  currentPage = 0,
+  pageSize = 0,
+  totalItems = 1,
   onNextPage,
   onPreviousPage
 }: IPaginationProps): JSX.Element => {
   return (
     <div className="pagination">
       <div className="actions">
-        <button onClick={onPreviousPage}>Prev</button>
-        <button onClick={onNextPage}>Next</button>
+        <Button onClick={onPreviousPage} disabled={currentPage === 1}>
+          <ArrowLeftIcon />
+        </Button>
+        <Button
+          onClick={onNextPage}
+          disabled={currentPage === Math.trunc(totalItems / 10) + 1}
+        >
+          <ArrowRightIcon />
+        </Button>
       </div>
-      <div className="label">
-        Page {currentPage} of {Math.ceil(totalItems / pageSize)}
+      <div className="pages">
+        Page {currentPage} of {Math.trunc(totalItems / pageSize) + 1}
       </div>
     </div>
   );

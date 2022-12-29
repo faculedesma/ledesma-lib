@@ -18,5 +18,6 @@
     "baseUrl": "./src"
   },
   "include": ["**/*.ts", "**/*.tsx", "test"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "files": ["./src/types.d.ts"]
 }

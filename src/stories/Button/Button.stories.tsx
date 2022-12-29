@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../components/Button/Button';
+import ArrowRightIcon from '../../../assets/icons/arrow-right.svg';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export default {
@@ -7,8 +8,6 @@ export default {
   component: Button,
   argTypes: {
     className: { control: { disable: true } },
-    startIcon: { control: { disable: true } },
-    endIcon: { control: { disable: true } },
     onClick: { action: 'clicked' }
   }
 } as ComponentMeta<typeof Button>;
@@ -39,13 +38,17 @@ TextButton.args = {
   disabled: false
 };
 
-export const WithIconButton = Template.bind({});
-WithIconButton.args = {
-  children: 'Button Text',
+export const ButtonWithIcon = Template.bind({});
+ButtonWithIcon.args = {
+  children: (
+    <>
+      <ArrowRightIcon />
+      Button Text
+    </>
+  ),
   type: 'solid',
   size: 'medium',
-  disabled: false,
-  startIcon: undefined
+  disabled: false
 };
 
 export const SmallButton = Template.bind({});
@@ -67,6 +70,19 @@ MediumButton.args = {
 export const LargeButton = Template.bind({});
 LargeButton.args = {
   children: 'Button Text',
+  type: 'solid',
+  size: 'large',
+  disabled: false
+};
+
+export const LargeButtonWithIcon = Template.bind({});
+LargeButtonWithIcon.args = {
+  children: (
+    <>
+      <ArrowRightIcon />
+      Button Text
+    </>
+  ),
   type: 'solid',
   size: 'large',
   disabled: false

@@ -4,9 +4,14 @@
   width: 100%;
   font-family: $primary-font-family;
   color: $secondary-color;
-  border-collapse: collapse;
   border-spacing: 0px;
   box-sizing: border-box;
+
+  svg {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .rows {
@@ -15,10 +20,12 @@
   }
 
   thead {
-    border-bottom: 1px solid $secondary-color;
+    th {
+      border-bottom: 1px solid $secondary-color;
+    }
 
     tr {
-      &:hover, &:active {
+      &:hover {
         background: none;
       }
     }
@@ -27,8 +34,8 @@
   tbody {
     font-weight: 300;
 
-    tr {
-      border-radius: 10px;
+    &:last-child {
+      border-radius: 0 8px;
     }
   }
 
@@ -54,7 +61,7 @@
 
 .lines {
   tbody {
-    tr {
+    td {
       font-weight: 300;
       border-bottom: .5px solid gray;
     }
@@ -70,6 +77,10 @@
     tr:nth-child(odd) {
       background-color: none;
     }
+
+    tr:hover {
+      background-color: $light-gray;
+    }
   }
 }
 
@@ -77,6 +88,21 @@
   tbody {
     tr {
       background: none;
+      &:hover {
+        background-color: $light-gray;
+      }
+    }
+  }
+}
+
+.bordered {
+  border: 2px solid black;
+  box-shadow: 0px 4px 0px black;
+  border-radius: 8px;
+
+  thead {
+    th {
+      border-bottom: 4px solid $secondary-color;
     }
   }
 }

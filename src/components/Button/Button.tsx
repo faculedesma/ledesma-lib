@@ -3,15 +3,12 @@ import './button.scss';
 
 type ButtonTypes = 'solid' | 'outline' | 'text';
 type ButtonSizes = 'small' | 'medium' | 'large';
-type SVGInHTML = HTMLElement & SVGElement;
 
 export interface IButtonProps {
-  children: string | SVGInHTML;
+  children: JSX.Element | string;
   type?: ButtonTypes;
   size?: ButtonSizes;
   className?: string;
-  startIcon?: SVGElement;
-  endIcon?: SVGElement;
   disabled?: boolean;
   onClick?: React.MouseEventHandler;
 }
@@ -21,25 +18,16 @@ const Button = ({
   type = 'solid',
   size = 'medium',
   className = '',
-  startIcon = undefined,
-  endIcon = undefined,
   disabled = false,
   onClick = undefined
 }: IButtonProps): JSX.Element => {
-  const hasIcon = Boolean(startIcon) || Boolean(startIcon);
   return (
     <button
-      className={`button ${type} ${size} ${className} ${
-        hasIcon ? 'with-icon' : ''
-      }`}
+      className={`button ${type} ${size} ${className}`}
       disabled={disabled}
       onClick={onClick}
     >
-      <>
-        {startIcon}
-        {children}
-        {endIcon}
-      </>
+      {children}
     </button>
   );
 };

@@ -45,4 +45,4 @@ You can check the documentation by cloning this project and running storybook on
 ## License
 
 This project is licensed under the terms of the
-[MIT license](/LICENSE).
+[ISC license](/LICENSE).

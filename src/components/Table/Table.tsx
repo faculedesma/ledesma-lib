@@ -10,17 +10,21 @@ export interface ITableProps {
   rowStyle?: RowStyleType;
   rowSize?: RowSizeType;
   columnSpace?: ColumnSpaceType;
+  bordered?: boolean;
 }
 
 const Table = ({
   children,
   rowStyle = 'lines',
   rowSize = 'normal',
-  columnSpace = 'normal'
+  columnSpace = 'normal',
+  bordered = true
 }: ITableProps): JSX.Element => {
   return (
     <table
-      className={`table ${rowStyle} rows rows-${rowSize} columns-${columnSpace}`}
+      className={`table ${rowStyle} rows rows-${rowSize} columns-${columnSpace} ${
+        bordered ? 'bordered' : ''
+      }`}
     >
       {children}
     </table>

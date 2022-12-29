@@ -2,11 +2,12 @@
   "name": "@faculedesma/ledesma-lib",
   "version": "1.1.0",
   "description": "A react component library.",
+  "license": "ISC",
   "scripts": {
-    "build": "rollup -c",
     "lint": "eslint src --ext .ts",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
+    "build-lib": "rollup -c",
     "build-storybook": "build-storybook",
     "semantic-release": "semantic-release --branches main"
   },
@@ -22,6 +23,8 @@
     "@storybook/manager-webpack5": "6.5.15",
     "@storybook/react": "6.5.15",
     "@storybook/testing-library": "0.0.13",
+    "@svgr/rollup": "6.5.1",
+    "@svgr/webpack": "6.5.1",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
     "@testing-library/user-event": "13.5.0",
@@ -30,6 +33,7 @@
     "@types/react": "18.0.24",
     "@types/react-dom": "18.0.8",
     "@typescript-eslint/eslint-plugin": "5.46.0",
+    "babel-loader": "9.1.0",
     "eslint": "8.29.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-config-standard-with-typescript": "23.0.0",
@@ -53,10 +57,10 @@
     "rollup-plugin-postcss": "4.0.2",
     "sass": "1.57.1",
     "sass-loader": "13.2.0",
+    "semantic-release": "19.0.5",
     "style-loader": "3.3.1",
     "ts-jest": "29.0.3",
-    "typescript": "4.9.4",
-    "semantic-release": "19.0.5"
+    "typescript": "4.9.4"
   },
   "peerDependencies": {
     "react": "18.2.0"

@@ -1,19 +1,11 @@
 @import '../../../utils/variables';
 
 tr {
-  &:hover {
-    background-color: $lighter-gray;
-  }
-
-  &:active {
-    background-color: $disabled-gray;
+  &:active, &:hover {
+    background-color: $light-gray;
   }
 }
 
-.active {
-  background-color: $disabled-gray;
-}
-
-.hover {
-  background-color: $lighter-gray;
+.active, .hover {
+  background-color: $light-gray;
 }

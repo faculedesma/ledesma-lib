@@ -16,7 +16,7 @@ export const Basic = Template.bind({});
 Basic.args = {
   currentPage: 1,
   pageSize: 10,
-  totalItems: 100,
+  totalItems: 1154,
   onNextPage: () => {},
   onPreviousPage: () => {}
 };
