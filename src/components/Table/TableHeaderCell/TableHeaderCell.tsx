@@ -8,10 +8,10 @@ export interface ITableHeaderCellProps {
   textAlign?: TextAlignType;
 }
 
-const TableHeaderCell = ({
+const TableHeaderCell: React.FC<ITableHeaderCellProps> = ({
   children,
   textAlign = 'left'
-}: ITableHeaderCellProps): JSX.Element => {
+}): JSX.Element => {
   return <th className={`header-cell header-cell-${textAlign}`}>{children}</th>;
 };
 

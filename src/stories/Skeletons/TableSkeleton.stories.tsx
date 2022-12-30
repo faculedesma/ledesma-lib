@@ -5,11 +5,13 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 export default {
   title: 'Skeletons/TableSkeleton',
   component: TableSkeleton,
-  argTypes: {}
+  argTypes: {
+    id: { control: { disable: true } }
+  }
 } as ComponentMeta<typeof TableSkeleton>;
 
 const Template: ComponentStory<typeof TableSkeleton> = (args) => (
-  <TableSkeleton />
+  <TableSkeleton {...args} />
 );
 
 export const Basic = Template.bind({});

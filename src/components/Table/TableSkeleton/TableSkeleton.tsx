@@ -2,9 +2,15 @@ import React from 'react';
 import Indeterminate from '../../Progress/Indeterminate/Indeterminate';
 import './table-skeleton.scss';
 
-const TableSkeleton = (): JSX.Element => {
+export interface ITableSkeletonProps {
+  id?: string;
+}
+
+const TableSkeleton: React.FC<ITableSkeletonProps> = ({
+  id = 'table-skeleton'
+}): JSX.Element => {
   return (
-    <div className="table-skeleton">
+    <div id={id} className="table-skeleton">
       <Indeterminate />
     </div>
   );

@@ -50,13 +50,24 @@ const TableChildren = (
 export default {
   title: 'Core/Table',
   component: Table,
-  argTypes: {}
+  argTypes: {
+    id: { control: { disable: true } }
+  }
 } as ComponentMeta<typeof Table>;
 
 const Template: ComponentStory<typeof Table> = (args) => <Table {...args} />;
 
 export const Basic = Template.bind({});
 Basic.args = {
+  children: TableChildren,
+  rowStyle: 'lines',
+  rowSize: 'normal',
+  columnSpace: 'normal',
+  bordered: false
+};
+
+export const Bordered = Template.bind({});
+Bordered.args = {
   children: TableChildren,
   rowStyle: 'lines',
   rowSize: 'normal',

@@ -6,6 +6,7 @@ type ButtonSizes = 'small' | 'medium' | 'large';
 
 export interface IButtonProps {
   children: JSX.Element | string;
+  id?: string;
   type?: ButtonTypes;
   size?: ButtonSizes;
   className?: string;
@@ -13,19 +14,22 @@ export interface IButtonProps {
   onClick?: React.MouseEventHandler;
 }
 
-const Button = ({
+const Button: React.FC<IButtonProps> = ({
   children,
+  id = 'button',
   type = 'solid',
   size = 'medium',
   className = '',
   disabled = false,
   onClick = undefined
-}: IButtonProps): JSX.Element => {
+}): JSX.Element => {
   return (
     <button
+      id={`${id}-${type}`}
       className={`button ${type} ${size} ${className}`}
       disabled={disabled}
       onClick={onClick}
+      aria-label={`${id}-${type}`}
     >
       {children}
     </button>

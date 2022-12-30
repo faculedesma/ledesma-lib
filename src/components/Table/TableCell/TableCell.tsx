@@ -8,10 +8,10 @@ export interface ITableCellProps {
   textAlign?: TextAlignType;
 }
 
-const TableCell = ({
+const TableCell: React.FC<ITableCellProps> = ({
   children,
   textAlign = 'left'
-}: ITableCellProps): JSX.Element => {
+}): JSX.Element => {
   return <td className={`cell cell-${textAlign}`}>{children}</td>;
 };
 

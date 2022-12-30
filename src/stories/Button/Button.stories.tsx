@@ -7,6 +7,7 @@ export default {
   title: 'Buttons/Button',
   component: Button,
   argTypes: {
+    id: { control: { disable: true } },
     className: { control: { disable: true } },
     onClick: { action: 'clicked' }
   }
@@ -14,32 +15,32 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const SolidButton = Template.bind({});
-SolidButton.args = {
+export const Solid = Template.bind({});
+Solid.args = {
   children: 'Button Text',
   type: 'solid',
   size: 'medium',
   disabled: false
 };
 
-export const OutlineButton = Template.bind({});
-OutlineButton.args = {
+export const Outline = Template.bind({});
+Outline.args = {
   children: 'Button Text',
   type: 'outline',
   size: 'medium',
   disabled: false
 };
 
-export const TextButton = Template.bind({});
-TextButton.args = {
+export const Text = Template.bind({});
+Text.args = {
   children: 'Button Text',
   type: 'text',
   size: 'medium',
   disabled: false
 };
 
-export const ButtonWithIcon = Template.bind({});
-ButtonWithIcon.args = {
+export const WithIcon = Template.bind({});
+WithIcon.args = {
   children: (
     <>
       <ArrowRightIcon />
@@ -51,32 +52,32 @@ ButtonWithIcon.args = {
   disabled: false
 };
 
-export const SmallButton = Template.bind({});
-SmallButton.args = {
+export const Small = Template.bind({});
+Small.args = {
   children: 'Button Text',
   type: 'solid',
   size: 'small',
   disabled: false
 };
 
-export const MediumButton = Template.bind({});
-MediumButton.args = {
+export const Medium = Template.bind({});
+Medium.args = {
   children: 'Button Text',
   type: 'solid',
   size: 'medium',
   disabled: false
 };
 
-export const LargeButton = Template.bind({});
-LargeButton.args = {
+export const Large = Template.bind({});
+Large.args = {
   children: 'Button Text',
   type: 'solid',
   size: 'large',
   disabled: false
 };
 
-export const LargeButtonWithIcon = Template.bind({});
-LargeButtonWithIcon.args = {
+export const LargeWithIcon = Template.bind({});
+LargeWithIcon.args = {
   children: (
     <>
       <ArrowRightIcon />

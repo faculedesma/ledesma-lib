@@ -5,7 +5,9 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 export default {
   title: 'Progress/Indeterminate',
   component: Indeterminate,
-  argTypes: {}
+  argTypes: {
+    id: { control: { disable: true } }
+  }
 } as ComponentMeta<typeof Indeterminate>;
 
 const Template: ComponentStory<typeof Indeterminate> = (args) => (

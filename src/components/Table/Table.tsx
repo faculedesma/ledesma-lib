@@ -6,6 +6,7 @@ type RowSizeType = 'large' | 'normal' | 'small' | string;
 type ColumnSpaceType = 'large' | 'normal' | 'small' | string;
 
 export interface ITableProps {
+  id?: string;
   children: JSX.Element;
   rowStyle?: RowStyleType;
   rowSize?: RowSizeType;
@@ -13,15 +14,17 @@ export interface ITableProps {
   bordered?: boolean;
 }
 
-const Table = ({
+const Table: React.FC<ITableProps> = ({
+  id = 'table',
   children,
   rowStyle = 'lines',
   rowSize = 'normal',
   columnSpace = 'normal',
   bordered = true
-}: ITableProps): JSX.Element => {
+}): JSX.Element => {
   return (
     <table
+      id={id}
       className={`table ${rowStyle} rows rows-${rowSize} columns-${columnSpace} ${
         bordered ? 'bordered' : ''
       }`}

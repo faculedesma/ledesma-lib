@@ -5,6 +5,7 @@ import ArrowLeftIcon from '../../../assets/icons/arrow-left.svg';
 import './pagination.scss';
 
 export interface IPaginationProps {
+  id?: string;
   currentPage: number;
   pageSize: number;
   totalItems: number;
@@ -12,15 +13,16 @@ export interface IPaginationProps {
   onPreviousPage: () => void;
 }
 
-const Pagination = ({
+const Pagination: React.FC<IPaginationProps> = ({
+  id = 'pagination',
   currentPage = 0,
   pageSize = 0,
   totalItems = 1,
   onNextPage,
   onPreviousPage
-}: IPaginationProps): JSX.Element => {
+}): JSX.Element => {
   return (
-    <div className="pagination">
+    <div id={id} className="pagination">
       <div className="actions">
         <Button onClick={onPreviousPage} disabled={currentPage === 1}>
           <ArrowLeftIcon />

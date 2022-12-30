@@ -8,12 +8,12 @@ export interface ITableRowProps {
   onClick?: React.MouseEventHandler;
 }
 
-const TableRow = ({
+const TableRow: React.FC<ITableRowProps> = ({
   children,
   active = false,
   hover = false,
   onClick = undefined
-}: ITableRowProps): JSX.Element => {
+}): JSX.Element => {
   return (
     <tr
       className={`${active ? 'active' : ''} ${hover ? 'hovered' : ''}`}
