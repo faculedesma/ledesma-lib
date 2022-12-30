@@ -30,7 +30,7 @@
 .solid {
   background-color: $highlight-color;
   &:hover {
-    background-color: #ffaa00;
+    background-color: $highlight-color-darker;
     transition: all ease-in 100ms;
   }
   &:disabled {
@@ -44,7 +44,7 @@
   border: 2px solid $secondary-color;
   background-color: transparent;
   &:hover {
-    background-color: #efefef;
+    background-color: $primary-color-alt;
     transition: all ease-in 100ms;
   }
   &:disabled {
