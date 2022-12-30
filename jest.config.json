@@ -3,6 +3,7 @@
   "testEnvironment": "jsdom",
   "testPathIgnorePatterns": ["<rootDir>/dist"],
   "moduleNameMapper": {
-    "\\.(scss)$": "identity-obj-proxy"
+    "\\.(scss)$": "identity-obj-proxy",
+    "\\.svg$": "<rootDir>/__mocks__/svg.ts"
   }
 }
