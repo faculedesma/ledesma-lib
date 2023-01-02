@@ -1,5 +1,5 @@
 import React from 'react';
-import Indeterminate from '../../components/Progress/Indeterminate';
+import Indeterminate from '../../../components/particles/progress/indeterminate';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export default {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Indeterminate from '../../Progress/Indeterminate/Indeterminate';
+import Indeterminate from '../../../particles/progress/indeterminate/Indeterminate';
 import './table-skeleton.scss';
 
 export interface ITableSkeletonProps {

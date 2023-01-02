@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import TableRow from '../../src/components/Table/TableRow';
-import TableCell from '../../src/components/Table/TableCell';
+import TableRow from '../../src/components/organisms/table/table-row';
+import TableCell from '../../src/components/organisms/table/table-cell';
 import '@testing-library/jest-dom/extend-expect';
 
 const row = ['Facundo', 'Ledesma', '+34617434373', 29, 'Active'];

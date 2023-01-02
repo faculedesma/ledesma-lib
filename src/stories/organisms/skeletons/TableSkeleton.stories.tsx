@@ -1,5 +1,5 @@
 import React from 'react';
-import TableSkeleton from '../../components/Table/TableSkeleton';
+import TableSkeleton from '../../../components/organisms/table/table-skeleton';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export default {

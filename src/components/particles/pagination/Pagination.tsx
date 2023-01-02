@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../Button/Button';
-import ArrowRightIcon from '../../../assets/icons/arrow-right.svg';
-import ArrowLeftIcon from '../../../assets/icons/arrow-left.svg';
+import Button from '../../atoms/button/Button';
+import ArrowRightIcon from '../../../../assets/icons/arrow-right.svg';
+import ArrowLeftIcon from '../../../../assets/icons/arrow-left.svg';
 import './pagination.scss';
 
 export interface IPaginationProps {

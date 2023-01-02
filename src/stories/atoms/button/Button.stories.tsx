@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../components/Button/Button';
+import Button from '../../../components/atoms/button/Button';
 import ArrowRightIcon from '../../../assets/icons/arrow-right.svg';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 

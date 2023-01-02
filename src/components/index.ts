@@ -1,8 +1,8 @@
-export { default as Button } from './Button';
-export { default as Table } from './Table';
-export { default as TableRow } from './Table/TableRow';
-export { default as TableHeaderCell } from './Table/TableHeaderCell';
-export { default as TableCell } from './Table/TableCell';
-export { default as TableSkeleton } from './Table/TableSkeleton';
-export { default as Pagination } from './Pagination/Pagination';
-export { default as Indeterminate } from './Progress/Indeterminate';
+export { default as Button } from './atoms/button';
+export { default as Table } from './organisms/table';
+export { default as TableRow } from './organisms/table/table-row';
+export { default as TableHeaderCell } from './organisms/table/table-header-cell';
+export { default as TableCell } from './organisms/table/table-cell';
+export { default as TableSkeleton } from './organisms/table/table-skeleton';
+export { default as Pagination } from './particles/pagination/Pagination';
+export { default as Indeterminate } from './particles/progress/indeterminate';

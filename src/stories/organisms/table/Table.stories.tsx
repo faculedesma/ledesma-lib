@@ -1,8 +1,8 @@
 import React from 'react';
-import Table from '../../components/Table';
-import TableRow from '../../components/Table/TableRow/TableRow';
-import TableHeaderCell from '../../components/Table/TableHeaderCell/TableHeaderCell';
-import TableCell from '../../components/Table/TableCell/TableCell';
+import Table from '../../../components/organisms/table';
+import TableRow from '../../../components/organisms/table/table-row/TableRow';
+import TableHeaderCell from '../../../components/organisms/table/table-header-cell/TableHeaderCell';
+import TableCell from '../../../components/organisms/table/table-cell/TableCell';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 const columns = ['Name', 'Surname', 'Phone', 'Age', 'Action'];

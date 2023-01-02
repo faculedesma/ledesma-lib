@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Table from '../../src/components/Table/Table';
-import TableRow from '../../src/components/Table/TableRow';
-import TableHeaderCell from '../../src/components/Table/TableHeaderCell';
-import TableCell from '../../src/components/Table/TableCell';
+import Table from '../../src/components/organisms/table/Table';
+import TableRow from '../../src/components/organisms/table/table-row';
+import TableHeaderCell from '../../src/components/organisms/table/table-header-cell';
+import TableCell from '../../src/components/organisms/table/table-cell';
 import '@testing-library/jest-dom/extend-expect';
 
 const columns = ['Name', 'Surname', 'Phone', 'Age', 'Action'];

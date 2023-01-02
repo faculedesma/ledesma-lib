@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Button from '../../src/components/Button/Button';
+import Button from '../../src/components/atoms/button/Button';
 import '@testing-library/jest-dom/extend-expect';
 
 const buttonLabel = 'Button Text';
