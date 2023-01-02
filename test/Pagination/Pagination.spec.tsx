@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import Pagination from '../../src/components/particles/pagination/Pagination';
+import Pagination from '../../src/components/molecules/pagination/Pagination';
 import '@testing-library/jest-dom/extend-expect';
 
 const paginationProps = {

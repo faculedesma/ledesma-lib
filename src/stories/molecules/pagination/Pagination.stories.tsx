@@ -1,5 +1,5 @@
 import React from 'react';
-import Pagination from '../../../components/particles/pagination/Pagination';
+import Pagination from '../../../components/molecules/pagination/Pagination';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export default {
